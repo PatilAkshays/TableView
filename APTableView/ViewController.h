@@ -8,8 +8,19 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <UITableViewDelegate,UITableViewDataSource>
+{
+    UITableView *tableView;
+    NSArray *personalApp;
+    NSArray *natureApp;
+    NSArray *socialApp;
+    NSArray *developerApp;
+    NSArray *personalImage;
+    NSArray *natureImage;
+    NSArray *socialImage;
+    NSArray *developerImage;
 
+}
 
 @end
 
